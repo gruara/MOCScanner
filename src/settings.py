@@ -11,8 +11,8 @@ DEVICE_BYTES    = b'Canon MG4200 series Network'
 # Can only get pytwain working with bmp at the moment!
 SCAN_PATH = 'C:\\Users\\Andrew\\MOCScanner\\src\\Scan'
 
-FILE_TYPE_JPEG  = '.jpg'
-FILE_TYPE_BMP   = '.bmp'
+FILE_TYPE_JPEG  = 'jpg'
+FILE_TYPE_BMP   = 'bmp'
 
 FILE_TYPE = FILE_TYPE_JPEG
 
@@ -25,7 +25,7 @@ PIXEL_TYPE_GREY = 1
 PIXEL_TYPE_RGB  = 2
 PIXEL_TYPE_PAL  = 3
 
-PIXEL_TYPE = PIXEL_TYPE_BW
+PIXEL_TYPE = PIXEL_TYPE_RGB
 
 UNIT_INCHES     = 0
 UNIT_CM         = 1
@@ -37,4 +37,5 @@ UNIT_MM         = 6
 
 UNITS = UNIT_INCHES
 
-SCAN_AREA = (0.9,0.6,3.8,1.6) # X,Y,wIDTH,DEPTH
+SCAN_AREA = (1.0,2.4,2.5,4.1) # LEFT,TOP,RIGHT,BOTTOM
+#SCAN_AREA = (0.9,0.6,3.8,1.6) # X,Y,wIDTH,DEPTH

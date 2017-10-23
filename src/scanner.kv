@@ -1,7 +1,11 @@
 #:kivy 1.0
 
+<ScreenManagement>:
+    MOCScanner:
+    ScreenTwo:
 
 <MOCScanner>
+    name: 'Main'
     cols: 1
     rows: 2
     GridLayout:
@@ -15,7 +19,7 @@
             text: "Scan"
             halign: 'center'
             color: [0,0,0,1]
-            bold: True
+            bold: False
             background_color: (2,2,2,1)
             on_press: root.do_scan()
 
@@ -33,15 +37,15 @@
             
         Button:
             id: but2
-            text: 'B2'
+            text: 'Download'
             color: [0,0,0,1]
             background_color: (2,2,2,1) 
-            on_press: root.do_action()
+            on_press: root.do_download()
         Button:
             id: but3
             text: "Upload"
             background_color: (2,2,2,1) 
-            on_press: root.do_action()
+            on_press: root.do_upload()
 #         DropDown:
 #             Button:
 #                 text: "B1"
@@ -99,3 +103,7 @@
         Image:
             id: img1
             source: root.background
+
+            
+            
+            
